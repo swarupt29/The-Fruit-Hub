@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Fruit Hub</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+	</style>
+</head>
+
+<body>
+	<div class="container">
+			<img src="/images/logo.png" alt="The Fruit Hub Logo" style="width: 200px; height: auto; margin-bottom: 20px;">
+			<form action="#" th:action="@{/fruit/fetch}" method="post">
+				<label for="name">Enter Fruit Name:</label>
+				<input type="text" id="name" name="name" required>
+				<button type="submit">Fetch Details</button>
+			</form>
+		</div>
+</body>
+
+</html>
